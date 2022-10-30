@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: hoteles
+  datasource:
+    url: jdbc:mysql://${hoteles-db:localhost}:3308/hoteles
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update

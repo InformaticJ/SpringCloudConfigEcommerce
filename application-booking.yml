@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: booking
+  datasource:
+    url: jdbc:mysql://${booking-db:localhost}:3307/reservas
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  environment:
+    hoteles-host: ${hoteles-host:localhost}
+    vuelos-host: ${vuelos-host:localhost}
