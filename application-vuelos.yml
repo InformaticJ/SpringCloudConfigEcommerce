@@ -8,7 +8,7 @@ spring:
   application:
     name: vuelos
   datasource:
-    url: jdbc:mysql://${vuelos-db:localhost}:3309/vuelos
+    url: jdbc:mysql://${vuelos-db:localhost}:${production-port:3309}/vuelos
     username: root
     password: password
   jpa:
