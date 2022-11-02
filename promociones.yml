@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: promociones
+  datasource:
+    url: jdbc:mysql://${promociones-db:localhost}:${production-port:3310}/promociones
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
