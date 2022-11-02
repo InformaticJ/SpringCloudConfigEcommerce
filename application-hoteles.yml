@@ -17,7 +17,3 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-
-app:
-  environment:
-    spring-cloud-config-host: ${spring-cloud-config:localhost}

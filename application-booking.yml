@@ -22,4 +22,4 @@ app:
   environment:
     hoteles-host: ${hoteles-host:localhost}
     vuelos-host: ${vuelos-host:localhost}
-    spring-cloud-config-host: ${spring-cloud-config:localhost}
+
