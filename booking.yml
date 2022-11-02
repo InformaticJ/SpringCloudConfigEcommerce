@@ -18,8 +18,4 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 
-app:
-  environment:
-    hoteles-host: ${hoteles-host:localhost}
-    vuelos-host: ${vuelos-host:localhost}
 
